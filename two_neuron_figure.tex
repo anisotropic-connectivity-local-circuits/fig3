@@ -1,0 +1,92 @@
+
+%\documentclass[crop=true,border=0,convert={density=600}]{standalone}
+\documentclass[margin={-0.5cm -0.2cm   -0.1cm  -0.3cm}]{standalone}
+%%             margin={ left bottom right top}  
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{overpic}
+\usepackage{tgheros}
+\usepackage[export]{adjustbox}
+\usepackage{calc}
+
+\renewcommand*{\familydefault}{\sfdefault}
+
+\makeatletter 
+\newcommand\Largeplus{\@setfontsize\semiHuge{16.72}{21.38}}
+\makeatother
+
+\begin{document}
+
+\def\xin{2.9}
+\def\yin{68.3}
+\def\xlin{50}
+\def\ylin{100}
+
+\def\w{2.6in}
+
+\large \bfseries
+
+\begin{tabular}{@{}l@{}}
+
+
+  
+  \smallskip
+  
+  \\
+  
+  \begin{overpic}[width=\w]%
+    % 110, 133
+    {/home/fh/sci/lab/aniso_netw/ploscb_18/fig/main/fig3A_2n_rel_rand.png}
+    %\put(32,\ylin){anisotropic}
+    %% \put(\xin,\yin){\fboxsep=3pt\colorbox{white}{A}}
+    \put(\xin,\yin){A}
+  \end{overpic}
+
+  \begin{overpic}[width=\w+\w]%
+    % 110, 133
+    {/home/fh/sci/lab/aniso_netw/ploscb_18/fig/main/fig3B_2n_rel_occurrence.png}
+    %\put(32,\ylin){anisotropic}
+    %% \put(\xin,\yin){\fboxsep=3pt\colorbox{white}{A}}
+    \put(1.4,34.1){B}
+  \end{overpic}
+
+
+  %% \\
+
+  %% %% \begin{overpic}[width=\w]%
+  %% %%   % 110, 133
+  %% %%   {/home/fh/sci/lab/aniso_netw/ploscb_18/fig/main/fig3B_2n_abs_counts.png}
+  %% %%   %\put(32,\ylin){anisotropic}
+  %% %%   \put(\xin,\yin){\fboxsep=3pt\colorbox{white}{A}}
+  %% %% \end{overpic}
+
+  %% \begin{overpic}[width=\w, frame=1pt]%
+  %%   % 110, 133
+  %%   {/home/fh/sci/lab/aniso_netw/ploscb_18/fig/fig3_EF_tmp.png}
+  %%   %\put(32,\ylin){anisotropic}
+  %%   %% \put(\xin,\yin){\fboxsep=3pt\colorbox{white}{A}}
+  %% \end{overpic}
+
+  %% \begin{overpic}[width=\w, frame=1pt]%
+  %%   % 110, 133
+  %%   {/home/fh/sci/lab/aniso_netw/ploscb_18/fig/fig3_EF_tmp.png}
+  %%   %\put(32,\ylin){anisotropic}
+  %%   %% \put(\xin,\yin){\fboxsep=3pt\colorbox{white}{A}}
+  %% \end{overpic}
+
+  %%   \begin{overpic}[width=\w]%
+  %%   % 110, 133
+  %%   {/home/fh/sci/lab/aniso_netw/ploscb_18/fig/fig3_EF_tmp.png}
+  %%   %\put(32,\ylin){anisotropic}
+  %%   %% \put(\xin,\yin){\fboxsep=3pt\colorbox{white}{A}}
+  %% \end{overpic}
+
+  
+   
+\end{tabular}	
+
+
+\end{document}
+
+
